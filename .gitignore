@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Raw and prepared data (several GB): see README for how to regenerate
+data/
+archive.zip
+
+# Model checkpoints: keep only the two final models
+checkpoints/*
+!checkpoints/googlenet_v2_64.pt
+!checkpoints/transfer_resnet18_v2_64.pt
